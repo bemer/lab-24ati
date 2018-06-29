@@ -73,7 +73,7 @@ Agora que o `Puppet Agent` foi instalado, vamos realizar uma configuração para
 
     127.0.0.1       localhost
     127.0.1.1       puppet-client
-    <IP do Mater>   puppet-server
+    <IP do Mater>   puppet-server puppet-server.fiap.com.br
 
     # The following lines are desirable for IPv6 capable hosts
     ::1     localhost ip6-localhost ip6-loopback
@@ -83,8 +83,8 @@ Agora que o `Puppet Agent` foi instalado, vamos realizar uma configuração para
 Agora, vamos editar o arquivo de configruração do Puppet Agent em nossa VM. Edite o arquivo `/etc/puppetlabs/puppet/puppet.conf` e insira o seguinte conteúdo:
 
     [main]
-    certname = puppet-client
-    server = puppet-server
+    certname = puppet-client.fiap.com.br
+    server = puppet-server.fiap.com.br
 
 
 Inicie o Puppet Agent através dos seguintes comandos:
