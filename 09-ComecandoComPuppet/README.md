@@ -106,7 +106,7 @@ Você deverá ver algo semelhate a:
 
 Agora, ainda no `puppet-server` execute o seguinte comando para assinar o certificado:
 
-    $ sudo /opt/puppetlabs/bin/puppet cert sign puppet-client
+    $ sudo /opt/puppetlabs/bin/puppet cert sign puppet-client.fiap.com.br
 
 A saída deverá ser semelhante a esta:
 
